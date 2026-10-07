@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Borahae Club · BTS & ARMY</title>
+    <meta
+      name="description"
+      content="Your BTS fan space: meet the seven, explore their music, play trivia and sing along." />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%238c55ff'/%3E%3Cpath d='M8 7l7 4v16l-7-4zm16 0l-7 4v16l7-4z' fill='white'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="#home"
+        ><span class="mark">▥</span> BORAHAE<span class="brand-light"
+          >CLUB</span
+        ></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#members">The seven</a><a href="#music">Music room</a
+        ><a href="#games">Play</a><a href="#army">ARMY 101</a>
+      </nav>
+      <span class="fanlabel">A LITTLE SPACE FOR ARMY ♡</span>
+    </header>
+    <main id="home">
+      <section class="opening">
+        <div class="intro">
+          <div class="eyebrow">BTS × ARMY · 방탄소년단</div>
+          <h1>Seven voices.<br />A universe<br />of <em>us.</em></h1>
+          <p>
+            Discover the music. Know the seven.<br />Sing your heart out. You
+            belong here.
+          </p>
+          <div class="actions">
+            <a class="button" href="#games">Test your BTS knowledge</a
+            ><a class="textlink" href="#music">Enter the music room ↗</a>
+          </div>
+          <div class="intro-bottom">
+            <span>01 / OUR PURPLE UNIVERSE</span><span>보라해 ♡</span>
+          </div>
+        </div>
+        <div class="photo">
+          <img
+            src="bts.jpg"
+            alt="The seven members of BTS in their official Proof-era group portrait" />
+          <div class="photo-caption">
+            <span>RM · JIN · SUGA · J-HOPE · JIMIN · V · JUNG KOOK</span
+            ><strong>OT7, always.</strong>
+          </div>
+        </div>
+      </section>
+      <div class="ribbon">
+        <span>LOVE YOURSELF</span><span>✦</span><span>YOU NEVER WALK ALONE</span
+        ><span>✦</span><span>APOBANGPO</span><span>✦</span
+        ><span>방탄소년단</span>
+      </div>
+      <section id="members">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">01 · MEET BANGTAN</div>
+            <h2>Seven different colors.<br />One extraordinary story.</h2>
+          </div>
+          <a
+            class="textlink"
+            href="https://bts.ibighit.com/eng/profile/"
+            target="_blank"
+            rel="noopener"
+            >Official BTS profile ↗</a
+          >
+        </div>
+        <div
+          class="member-tabs"
+          id="member-tabs"
+          role="tablist"
+          aria-label="BTS members"></div>
+        <div id="member-detail" class="member-detail" role="tabpanel"></div>
+      </section>
+      <section id="music">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">02 · TURN IT UP</div>
+            <h2>Your purple music room.</h2>
+          </div>
+          <p>Pick a track. Find its meaning.<br />Then make it your own.</p>
+        </div>
+        <div class="music-layout">
+          <div class="song-browser">
+            <label for="song-search">Find your next song</label
+            ><input
+              id="song-search"
+              type="search"
+              placeholder="Song, member or album…" />
+            <div class="song-filters">
+              <button data-filter="all" class="active" aria-pressed="true">
+                All</button
+              ><button data-filter="group" aria-pressed="false">BTS</button
+              ><button data-filter="solo" aria-pressed="false">Solo</button>
+            </div>
+            <p class="small" id="song-count"></p>
+            <div class="song-list" id="song-list"></div>
+          </div>
+          <div class="player">
+            <div class="player-top">
+              <span class="eyebrow">NOW IN THE ROOM</span><span>♫</span>
+            </div>
+            <h3 id="song-title"></h3>
+            <p id="song-album"></p>
+            <div id="video" class="video"></div>
+            <div class="mode-tabs" role="tablist" aria-label="Music modes">
+              <button data-mode="meaning" class="active" role="tab">
+                Meaning & Korean</button
+              ><button data-mode="sing" role="tab">Sing along</button
+              ><button data-mode="karaoke" role="tab">Karaoke</button>
+            </div>
+            <div
+              id="music-content"
+              class="music-content"
+              aria-live="polite"></div>
+          </div>
+        </div>
+        <details class="translation">
+          <summary>Lyrics & translations desk</summary>
+          <p>
+            Explore full Korean lyrics, romanization and English translations on
+            <a
+              href="https://doolsetbangtan.wordpress.com/"
+              target="_blank"
+              rel="noopener"
+              >Doolset Bangtan</a
+            >, an independent fan translation resource. Check the translator’s
+            notes for context.
+          </p>
+          <p>
+            Keep your own practice notes below. Notes stay here only while this
+            page is open.
+          </p>
+          <label for="notes">My lyric study notes</label
+          ><textarea
+            id="notes"
+            placeholder="Song title, a word to remember, your interpretation…"></textarea
+          ><button id="clear-notes">Clear notes</button>
+          <p class="small">
+            This room provides original song summaries and vocabulary, rather
+            than reproducing full copyrighted lyrics.
+          </p>
+        </details>
+      </section>
+      <section id="games">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">03 · A LITTLE FRIENDLY COMPETITION</div>
+            <h2>How well do you know BTS?</h2>
+          </div>
+          <span class="pill">No gatekeeping. Just good fun.</span>
+        </div>
+        <div class="game-grid">
+          <article class="quiz game-card">
+            <div class="game-meta">
+              <span>01 / BANGTAN BRAIN</span
+              ><span id="quiz-count">75 QUESTIONS</span>
+            </div>
+            <div id="quiz-area"></div>
+          </article>
+          <article class="game-card match">
+            <div class="game-meta">
+              <span>02 / NAME THAT MEMBER</span><span>7 MATCHES</span>
+            </div>
+            <h3>Stage name meets real name.</h3>
+            <p>Choose the member who matches each Korean name.</p>
+            <div id="match-area"></div>
+          </article>
+        </div>
+      </section>
+      <section id="eras">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">04 · THE STORY IN SOUND</div>
+            <h2>A starting point for every era.</h2>
+          </div>
+          <a
+            class="textlink"
+            href="https://bts.ibighit.com/eng/discography/"
+            target="_blank"
+            rel="noopener"
+            >Full official discography ↗</a
+          >
+        </div>
+        <div class="era-grid">
+          <article>
+            <span>2013–2014</span>
+            <h3>The beginning</h3>
+            <p>
+              School, ambition and finding a voice. Start with 2 COOL 4 SKOOL,
+              then DARK & WILD.
+            </p>
+            <b>TRY: NO MORE DREAM</b>
+          </article>
+          <article>
+            <span>2015–2016</span>
+            <h3>Youth & growing pains</h3>
+            <p>
+              The Most Beautiful Moment in Life and WINGS explore change,
+              friendship and temptation.
+            </p>
+            <b>TRY: I NEED U · BLOOD SWEAT & TEARS</b>
+          </article>
+          <article>
+            <span>2017–2018</span>
+            <h3>Love Yourself</h3>
+            <p>
+              HER, TEAR and ANSWER trace love, heartbreak and learning to accept
+              yourself.
+            </p>
+            <b>TRY: DNA · FAKE LOVE · IDOL</b>
+          </article>
+          <article>
+            <span>2019–2022</span>
+            <h3>Reflection & connection</h3>
+            <p>
+              MAP OF THE SOUL, BE and the Proof anthology offer different ways
+              into the group’s story.
+            </p>
+            <b>TRY: BLACK SWAN · LIFE GOES ON</b>
+          </article>
+        </div>
+        <p class="small">
+          An introductory era guide, not an exhaustive release list. Explore all
+          releases through the official discography.
+        </p>
+      </section>
+      <section id="army" class="army-section">
+        <div>
+          <div class="eyebrow">05 · WELCOME HOME</div>
+          <h2>New here?<br />You’re already welcome.</h2>
+          <p>
+            You don’t need to know every song or own an album to enjoy BTS.
+            Start with whatever speaks to you.
+          </p>
+          <a
+            class="button"
+            href="https://weverse.io/bts"
+            target="_blank"
+            rel="noopener"
+            >Explore BTS on Weverse ↗</a
+          >
+        </div>
+        <div class="army-facts">
+          <details open>
+            <summary>What is ARMY?</summary>
+            <p>
+              The name of BTS’s fandom: Adorable Representative M.C. for Youth.
+              Fans celebrate the music, support the members and connect across
+              languages.
+            </p>
+          </details>
+          <details>
+            <summary>What does OT7 mean?</summary>
+            <p>
+              All seven members together. It’s a way of expressing support for
+              the whole group.
+            </p>
+          </details>
+          <details>
+            <summary>Borahae / 보라해</summary>
+            <p>
+              Often translated as “I purple you,” this expression coined by V
+              represents enduring trust and love between BTS and ARMY.
+            </p>
+          </details>
+          <details>
+            <summary>Your first BTS rabbit hole</summary>
+            <p>
+              Try an official music video, explore a whole album, then discover
+              Run BTS! through official BTS channels or Weverse. There’s no
+              required order.
+            </p>
+          </details>
+          <details>
+            <summary>A good place to be a fan</summary>
+            <p>
+              Credit artists and translators, respect privacy, avoid rumors and
+              welcome different tastes. Loving one member doesn’t require
+              putting another down.
+            </p>
+          </details>
+        </div>
+      </section>
+      <footer>
+        <a class="brand" href="#home">BORAHAE CLUB ♡</a>
+        <p>
+          An independent fan space. Not affiliated with BTS, BIGHIT MUSIC or
+          HYBE.<br />Group photo: BIGHIT MUSIC · Facts:
+          <a href="https://bts.ibighit.com/eng/profile/">official profile</a> &
+          <a href="https://bts.ibighit.com/eng/discography/">discography</a> ·
+          Videos remain with their owners.
+        </p>
+        <span>MADE FOR THE LOVE OF MUSIC.</span>
+      </footer>
+    </main>
+    <script src="content.js"></script>
+    <script src="questions.js"></script>
+    <script src="quiz-engine.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
